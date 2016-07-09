@@ -23,7 +23,7 @@ func(ref arg){} [br]// ref引数（参照渡し）
 Foo!(alias T); [br]// エイリアス引数
 arg.func(args...) [br]// UFCS
 alias myType = size_t; [br]// alias（エイリアス）
-typeof(return) [br]// 引数の型
+typeof(return) [br]// 戻り値の型
 mixin template Foo(T){} [br]// テンプレート・ミックスイン
 T func(T)(args){} [br]// テンプレート・関数
 this(T)(args){} [br]// テンプレート・初期化関数
