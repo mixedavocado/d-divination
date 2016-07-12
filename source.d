@@ -20,10 +20,10 @@ auto ref func(){} [br]// "auto ref" 関数修飾子
 func(in arg){} [br]// in引数（scope+const）
 func(lazy arg){} [br]// lazy引数（遅延評価）
 func(ref arg){} [br]// ref引数（参照渡し）
-Foo!(alias T); [br]// エイリアス引数
 arg.func(args...) [br]// UFCS
 alias myType = size_t; [br]// alias（エイリアス）
 typeof(return) [br]// 戻り値の型
+Foo(alias T); [br]// エイリアス引数（テンプレート）
 mixin template Foo(T){} [br]// テンプレート・ミックスイン
 T func(T)(args){} [br]// テンプレート・関数
 this(T)(args){} [br]// テンプレート・初期化関数
